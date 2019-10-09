@@ -34,6 +34,7 @@ class LoginPage extends Component {
 
   onSubmit = async e => {
     e.preventDefault();
+    console.log(process.env.IS_PROD);
 
     const errors = this.validate(this.state.data);
     this.setState({ errors });
