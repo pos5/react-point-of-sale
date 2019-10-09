@@ -1,7 +1,6 @@
 import axios from "axios";
 
-export const URL_PREFIX = 
-  "https://posss-backend.herokuapp.com/api";
+export const URL_PREFIX = "https://posss-backend.herokuapp.com/api";
 
 const apiBuilder = mainRouteName => ({
   fetchById: id => axios.get(`${URL_PREFIX}/${mainRouteName}/${id}`),
